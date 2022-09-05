@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background: url("pexels-hasan-albari.jpg") no-repeat;
+            /* Keep the inherited background full size. */
+            background-attachment: fixed;
+            background-size: cover;
+            /*display: grid;
+            align-items: center;
+            justify-content: center; 
+            height: 100vh; */
+        }
+
+        .containerg {
+            /* width: 30rem;
+            height: 20rem; */
+            box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .2);
+            border-radius: 20px;
+            position: relative;
+            z-index: 1;
+            background: inherit;
+            overflow: hidden;
+        }
+
+        .containerg:before {
+            content: "";
+            position: absolute;
+            background: inherit;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 20000px rgba(255, 255, 255, 0.603);
+            filter: blur(10px);
+            margin: -30px;
+        }
+
+        .block {
+            display: inline-block;
+            width: 200px;
+            height: 230px;
+            background-color: rgba(245, 241, 241, 0.452);
+            padding: 0px;
+            margin: 50px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .imgBox {
+            width: 200px;
+            height: 200px;
+        }
+
+        .imgBox:hover {
+            -moz-box-shadow: 0 0 30px #ccc;
+            -webkit-box-shadow: 0 0 30px #ccc;
+            box-shadow: 0 0 30px rgb(165, 162, 162);
+        }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>News Reader App</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">News Reader RSS</a>
+        </div>
+    </nav>
+    <br><br>
+    <hr>
+    <div>
+        <h3>
+            <center>Select Category:</center>
+        </h3>
+        <div class="container">
+            <div class="containerg">
+                <a href="Sports.html">
+                    <div class="block imgBox"><img src="sports.jfif" alt="Sports" width="200" height="200">
+                        <p>
+                            <b><center>Sports</center>
+                        </p>
+                    </div>
+                </a>
+                <a href="World.html">
+                    <div class="block imgBox"><img src="World.jfif" alt="World" width="200" height="200">
+                        <p>
+                            <b><center>World</center></b>
+                        </p>
+                    </div>
+                </a>
+                <a href="Economics.html">
+                    <div class="block imgBox glassEffect"><img src="economics.jfif" alt="economics" width="200"
+                            height="200">
+                        <p>
+                            <center>Economics</center>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
